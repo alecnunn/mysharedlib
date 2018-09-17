@@ -1,3 +1,5 @@
+// credit to https://github.com/comquent/imperative-when
+
 import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 
 def call(boolean condition, body) {

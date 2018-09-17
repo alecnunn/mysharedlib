@@ -10,3 +10,4 @@ def call(boolean condition, body) {
     } else {
         Utils.markStageSkippedForConditional(STAGE_NAME)
     }
+}

@@ -3,8 +3,14 @@ def call(body) {
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
     body()
+    
+    /*
+        we want the following
+        - project type
+        - project url
+    */
 
     node {
-        echo "Hello, ${config.name}"
+        echo "Now using ${config.type} to clone ${config.url}"
     }
 }

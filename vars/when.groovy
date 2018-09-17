@@ -1,14 +1,12 @@
 import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 
-def call(boolean coldition, body) {
+def call(boolean condition, body) {
     def config = [:]
     body.resolveStrategy = Closure.OWNER_FIRST
     body.delegate = config
 
-    if(condition) {
+    if (condition) {
         body()
     } else {
-        echo 'Skipping stage'
         Utils.markStageSkippedForConditional(STAGE_NAME)
     }
-}

@@ -7,5 +7,5 @@ def call(String cmd) {
     sh ("${cmd} > ${filename}")
     def result = readFile(filename).trim()
     sh "rm ${filename}"
-    return result
+    echo result
 }

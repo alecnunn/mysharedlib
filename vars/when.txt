@@ -1,0 +1,5 @@
+# when
+
+a simple, imperative command that allows you to "skip" stages by wrapping the code internal to the stage in `when(conditional statement) { the stage code here }`
+
+adapted from snippet found [here](https://github.com/comquent/imperative-when)

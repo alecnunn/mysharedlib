@@ -1,4 +1,4 @@
-import org.jenkinsci.plugins.pipeline.modeldefintion.Utils
+import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 
 def call(boolean coldition, body) {
     def config = [:]
